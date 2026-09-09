@@ -1,0 +1,31 @@
+window.CATALOG_PAGES = [
+  { number: 1, src: "assets/pages/page-01.webp" },
+  { number: 2, src: "assets/pages/page-02.webp" },
+  { number: 3, src: "assets/pages/page-03.webp" },
+  { number: 4, src: "assets/pages/page-04.webp" },
+  { number: 5, src: "assets/pages/page-05.webp" },
+  { number: 6, src: "assets/pages/page-06.webp" },
+  { number: 7, src: "assets/pages/page-07.webp" },
+  { number: 8, src: "assets/pages/page-08.webp" },
+  { number: 9, src: "assets/pages/page-09.webp" },
+  { number: 10, src: "assets/pages/page-10.webp" },
+  { number: 11, src: "assets/pages/page-11.webp" },
+  { number: 12, src: "assets/pages/page-12.webp" },
+  { number: 13, src: "assets/pages/page-13.webp" },
+  { number: 14, src: "assets/pages/page-14.webp" },
+  { number: 15, src: "assets/pages/page-15.webp" },
+  { number: 16, src: "assets/pages/page-16.webp" },
+  { number: 17, src: "assets/pages/page-17.webp" },
+  { number: 18, src: "assets/pages/page-18.webp" },
+  { number: 19, src: "assets/pages/page-19.webp" },
+  { number: 20, src: "assets/pages/page-20.webp" },
+  { number: 21, src: "assets/pages/page-21.webp" },
+  { number: 22, src: "assets/pages/page-22.webp" },
+  { number: 23, src: "assets/pages/page-23.webp" },
+  { number: 24, src: "assets/pages/page-24.webp" },
+  { number: 25, src: "assets/pages/page-25.webp" },
+  { number: 26, src: "assets/pages/page-26.webp" },
+  { number: 27, src: "assets/pages/page-27.webp" }
+];
+
+// Os novos produtos são carregados de new-products.js.

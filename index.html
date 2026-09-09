@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Catálogo de produtos 2026">
+  <title>Catálogo de produtos 2026</title>
+  <link rel="stylesheet" href="styles.css?v=20260909-3">
+</head>
+<body>
+  <header class="toolbar">
+    <div class="brand">
+      <span class="brand-mark" aria-hidden="true"></span>
+      <div>
+        <strong>Catálogo 2026</strong>
+        <span>PRODUCT CATALOG</span>
+      </div>
+    </div>
+    <nav id="pageControls" class="controls" aria-label="Controles do catálogo">
+      <button id="prevPage" class="control icon" type="button" aria-label="Página anterior">←</button>
+      <label class="page-jump">
+        <span class="sr-only">Página atual</span>
+        <input id="pageInput" type="number" min="1" value="1" inputmode="numeric">
+        <span>/ <b id="pageTotal">27</b></span>
+      </label>
+      <button id="nextPage" class="control icon" type="button" aria-label="Próxima página">→</button>
+      <button id="zoomOut" class="control icon" type="button" aria-label="Diminuir zoom">−</button>
+      <output id="zoomValue" class="zoom-value">100%</output>
+      <button id="zoomIn" class="control icon" type="button" aria-label="Aumentar zoom">＋</button>
+      <button id="fitPage" class="control secondary" type="button">Ajustar</button>
+    </nav>
+  </header>
+
+  <div class="workspace">
+    <main id="stage" class="stage" tabindex="0">
+      <div id="catalogPages" class="catalog-pages" aria-live="polite"></div>
+    </main>
+  </div>
+
+  <script src="catalog-data.js"></script>
+  <script src="new-products.js"></script>
+  <script src="app.js?v=20260909-2"></script>
+</body>
+</html>
