@@ -241,3 +241,70 @@ body { overflow: hidden; }
   .original-sheet .unified-page-number { right: 0; bottom: 0; width: 11.4%; height: 10.5%; padding: 0 2.4% 1.4% 0; }
 }
 @media print { .catalog-sheet { break-after: page; width: 100%; margin: 0 !important; box-shadow: none; transform: none; } }
+
+/* Price text scales with the original 1680 × 1188 catalog image. */
+.catalog-sheet { container-type: inline-size; }
+.original-price-override { position: absolute; z-index: 2; overflow: hidden; background: #fff; color: #202020; padding: .12cqw .18cqw; font: .833333cqw/1.4 Arial, "Microsoft YaHei", sans-serif; }
+.original-price-override p { margin: 0 0 .17cqw; white-space: nowrap; }
+.catalog-product-copy .variant-price { font-size: 11px; margin-bottom: 2px; }
+@media (max-width: 850px) { .catalog-product-copy .variant-price { font-size: clamp(5px, .95vw, 11px); } }
+
+/* One proportional grid for original-page additions and generated pages. */
+.generated-sheet .new-product-page { padding: 0; }
+.catalog-sheet .catalog-product-grid {
+  position: absolute;
+  inset: 11.363636% 2.5% auto;
+  height: 80.808081%;
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  grid-template-rows: repeat(2, minmax(0, 1fr));
+  column-gap: 2.380952cqw;
+  row-gap: 0;
+  align-items: start;
+}
+.catalog-sheet .catalog-product-card { min-width: 0; }
+.catalog-sheet .catalog-product-image { width: 100%; aspect-ratio: 1; }
+.catalog-sheet .catalog-product-copy { padding: 1.72619cqw 0 0; }
+.catalog-sheet .product-title-line {
+  height: 2.97619cqw;
+  margin: 0;
+  gap: .416667cqw;
+  align-items: flex-start;
+}
+.catalog-sheet .catalog-product-copy h2 {
+  flex: 1;
+  font-size: 1.071429cqw;
+  line-height: 1.25;
+  overflow-wrap: anywhere;
+}
+.catalog-sheet .new-pill {
+  margin-top: .119048cqw;
+  padding: .178571cqw .297619cqw;
+  font-size: .535714cqw;
+}
+.catalog-sheet .catalog-product-copy p {
+  margin: 0 0 .178571cqw;
+  font-size: .833333cqw;
+  line-height: 1.4;
+  overflow-wrap: anywhere;
+}
+.catalog-sheet .catalog-product-copy .variant-price,
+.original-price-override.multiple-prices p {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) max-content;
+  align-items: baseline;
+  column-gap: .357143cqw;
+}
+.variant-price > span { min-width: 0; }
+.variant-price > strong,
+.original-price-override strong {
+  font-weight: 400;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+  text-align: right;
+}
+.original-price-override.multiple-prices p { white-space: normal; }
+.original-price-override.multiple-prices span { white-space: nowrap; }
+.catalog-sheet[data-original-page="17"] .overlay-grid {
+  inset: 11.111111% 3.392857% auto 1.607143%;
+}

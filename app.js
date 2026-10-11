@@ -38,17 +38,44 @@
   const money = value => value == null ? "Sob consulta" : new Intl.NumberFormat("pt-BR", { maximumFractionDigits: 2 }).format(value);
   const card = (product, slot) => {
     const variant = product.variants[0] || {};
-    const model = variant.specification && variant.specification !== "Padrão" ? `<p>Modelo: ${variant.specification}</p>` : "";
+    const model = product.variants.length > 1
+      ? product.variants.map(item => `<p class="variant-price"><span>${item.specification}</span><strong>R$ ${money(item.wholesalePrice)}</strong></p>`).join("")
+      : (variant.specification && variant.specification !== "Padrão" ? `<p>Modelo: ${variant.specification}</p>` : "");
     const position = slot == null ? "" : ` style="grid-column:${slot % 5 + 1};grid-row:${Math.floor(slot / 5) + 1}"`;
-    return `<article class="catalog-product-card"${position}><div class="catalog-product-image"><img src="${product.images?.[0] || ""}" alt="${product.name}"></div><div class="catalog-product-copy"><div class="product-title-line"><h2>${product.code} ${product.name}</h2><span class="new-pill">NOVO</span></div>${variant.unitsPerCarton == null ? "" : `<p>Embalagem: ${variant.unitsPerCarton.toLocaleString("pt-BR")}/cx</p>`}${model}<p>Valor: ${money(variant.wholesalePrice)}</p></div></article>`;
+    const cartons = [...new Set(product.variants.map(item => item.unitsPerCarton))];
+    const packaging = cartons.length === 1 && cartons[0] != null ? `<p>Embalagem: ${cartons[0].toLocaleString("pt-BR")}/cx</p>` : "";
+    const price = product.variants.length > 1 ? "" : `<p>Valor: ${money(variant.wholesalePrice)}</p>`;
+    return `<article class="catalog-product-card" data-code="${product.code}"${position}><div class="catalog-product-image"><img src="${product.images?.[0] || ""}" alt="${product.name}"></div><div class="catalog-product-copy"><div class="product-title-line"><h2>${product.code} ${product.name}</h2><span class="new-pill">NOVO</span></div>${packaging}${model}${price}</div></article>`;
   };
   pages.forEach((page, index) => {
     const section = document.createElement("section");
     section.className = `catalog-sheet ${page.type === "new" ? "generated-sheet" : "original-sheet"}`;
     section.dataset.page = index + 1;
+    if (page.type === "original") section.dataset.originalPage = page.number;
     section.id = `pagina-${index + 1}`;
     if (page.type === "original") section.innerHTML = `<img src="${page.src}" alt="Página ${index + 1} do catálogo" draggable="false">${page.additions.length ? `<div class="catalog-product-grid overlay-grid">${page.additions.map(item => card(item.product, item.slot)).join("")}</div>` : ""}${posterPages.has(page.number) ? "" : `<span class="unified-page-number">${String(index + 1).padStart(2, "0")}</span>`}`;
     else section.innerHTML = `<div class="new-product-page"><div class="catalog-product-grid">${page.products.map(product => card(product)).join("")}</div></div><span class="unified-page-number">${String(index + 1).padStart(2, "0")}</span>`;
+    if (page.type === "original") {
+      (window.PRICE_OVERRIDES?.[page.number] || []).forEach(patch => {
+        const overlay = document.createElement("div");
+        overlay.className = `original-price-override${patch.multi ? " multiple-prices" : ""}`;
+        overlay.dataset.code = patch.code;
+        overlay.style.cssText = `left:${patch.x / 1680 * 100}%;top:${patch.y / 1188 * 100}%;width:${patch.width / 1680 * 100}%;height:${patch.height / 1188 * 100}%;`;
+        patch.lines.forEach(text => {
+          const line = document.createElement("p");
+          const separator = patch.multi ? text.lastIndexOf(": R$ ") : -1;
+          if (separator >= 0) {
+            const label = document.createElement("span");
+            const value = document.createElement("strong");
+            label.textContent = text.slice(0, separator);
+            value.textContent = text.slice(separator + 2);
+            line.append(label, value);
+          } else line.textContent = text;
+          overlay.append(line);
+        });
+        section.append(overlay);
+      });
+    }
     list.append(section);
   });
   const sheets = [...document.querySelectorAll(".catalog-sheet")];

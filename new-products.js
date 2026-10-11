@@ -7,7 +7,7 @@ window.NEW_PRODUCTS = [
     "variants": [
       {
         "specification": "Padrão",
-        "wholesalePrice": 2.5,
+        "wholesalePrice": 2,
         "unitsPerCarton": 1000
       }
     ],
@@ -38,8 +38,18 @@ window.NEW_PRODUCTS = [
     "code": "BH1283",
     "variants": [
       {
-        "specification": "Padrão",
-        "wholesalePrice": 5,
+        "specification": "Pequeno, 100 un.",
+        "wholesalePrice": 4,
+        "unitsPerCarton": 100
+      },
+      {
+        "specification": "Médio, 100 un.",
+        "wholesalePrice": 5.5,
+        "unitsPerCarton": 100
+      },
+      {
+        "specification": "Grande, 100 un.",
+        "wholesalePrice": 7,
         "unitsPerCarton": 100
       }
     ],
@@ -55,7 +65,7 @@ window.NEW_PRODUCTS = [
     "variants": [
       {
         "specification": "Padrão",
-        "wholesalePrice": 13,
+        "wholesalePrice": 11,
         "unitsPerCarton": 100
       }
     ],
@@ -70,9 +80,19 @@ window.NEW_PRODUCTS = [
     "code": "BH1350",
     "variants": [
       {
-        "specification": "Padrão",
-        "wholesalePrice": 12,
+        "specification": "100 un.",
+        "wholesalePrice": 9,
         "unitsPerCarton": 100
+      },
+      {
+        "specification": "200 un.",
+        "wholesalePrice": 16,
+        "unitsPerCarton": 50
+      },
+      {
+        "specification": "50 un.",
+        "wholesalePrice": 4.5,
+        "unitsPerCarton": 200
       }
     ],
     "images": [
@@ -86,8 +106,23 @@ window.NEW_PRODUCTS = [
     "code": "BH1241",
     "variants": [
       {
-        "specification": "60 × 80, 60 × 100, 60 × 120 ou 60 × 140 cm",
-        "wholesalePrice": 20,
+        "specification": "60 × 80 cm",
+        "wholesalePrice": 18,
+        "unitsPerCarton": 100
+      },
+      {
+        "specification": "60 × 100 cm",
+        "wholesalePrice": 21,
+        "unitsPerCarton": 100
+      },
+      {
+        "specification": "60 × 120 cm",
+        "wholesalePrice": 23,
+        "unitsPerCarton": 100
+      },
+      {
+        "specification": "60 × 140 cm",
+        "wholesalePrice": 26,
         "unitsPerCarton": 100
       }
     ],
@@ -103,7 +138,7 @@ window.NEW_PRODUCTS = [
     "variants": [
       {
         "specification": "50 × 137 cm; branco, vermelho ou preto",
-        "wholesalePrice": 15,
+        "wholesalePrice": 13,
         "unitsPerCarton": 50
       }
     ],
@@ -119,7 +154,7 @@ window.NEW_PRODUCTS = [
     "variants": [
       {
         "specification": "Padrão",
-        "wholesalePrice": 1.5,
+        "wholesalePrice": 1.2,
         "unitsPerCarton": 3000
       }
     ],
@@ -135,7 +170,7 @@ window.NEW_PRODUCTS = [
     "variants": [
       {
         "specification": "Rosa, azul, preto ou roxo",
-        "wholesalePrice": 36,
+        "wholesalePrice": 33,
         "unitsPerCarton": 46
       }
     ],
@@ -151,7 +186,7 @@ window.NEW_PRODUCTS = [
     "variants": [
       {
         "specification": "Padrão",
-        "wholesalePrice": 9,
+        "wholesalePrice": 7,
         "unitsPerCarton": 210
       }
     ],
@@ -167,7 +202,7 @@ window.NEW_PRODUCTS = [
     "variants": [
       {
         "specification": "Padrão",
-        "wholesalePrice": 9,
+        "wholesalePrice": 7,
         "unitsPerCarton": 200
       }
     ],
@@ -183,7 +218,7 @@ window.NEW_PRODUCTS = [
     "variants": [
       {
         "specification": "Prata",
-        "wholesalePrice": 15,
+        "wholesalePrice": 13,
         "unitsPerCarton": 150
       }
     ],
@@ -199,7 +234,7 @@ window.NEW_PRODUCTS = [
     "variants": [
       {
         "specification": "24 compartimentos",
-        "wholesalePrice": 20,
+        "wholesalePrice": 17,
         "unitsPerCarton": 80
       }
     ],
@@ -215,7 +250,7 @@ window.NEW_PRODUCTS = [
     "variants": [
       {
         "specification": "8 compartimentos",
-        "wholesalePrice": 11,
+        "wholesalePrice": 9,
         "unitsPerCarton": 120
       }
     ],
@@ -231,7 +266,7 @@ window.NEW_PRODUCTS = [
     "variants": [
       {
         "specification": "Padrão",
-        "wholesalePrice": 14,
+        "wholesalePrice": 11,
         "unitsPerCarton": 100
       }
     ],
@@ -247,7 +282,7 @@ window.NEW_PRODUCTS = [
     "variants": [
       {
         "specification": "Padrão",
-        "wholesalePrice": 15,
+        "wholesalePrice": 14,
         "unitsPerCarton": 50
       }
     ],
@@ -263,7 +298,7 @@ window.NEW_PRODUCTS = [
     "variants": [
       {
         "specification": "Padrão",
-        "wholesalePrice": 3,
+        "wholesalePrice": 1.5,
         "unitsPerCarton": 3333
       }
     ],
@@ -279,7 +314,7 @@ window.NEW_PRODUCTS = [
     "variants": [
       {
         "specification": "Padrão",
-        "wholesalePrice": 9,
+        "wholesalePrice": 7,
         "unitsPerCarton": 500
       }
     ],
@@ -295,7 +330,7 @@ window.NEW_PRODUCTS = [
     "variants": [
       {
         "specification": "Padrão",
-        "wholesalePrice": 23,
+        "wholesalePrice": 19,
         "unitsPerCarton": 100
       }
     ],
@@ -310,8 +345,13 @@ window.NEW_PRODUCTS = [
     "code": "BH1323",
     "variants": [
       {
-        "specification": "Padrão",
-        "wholesalePrice": 22,
+        "specification": "Apoio de cabeça",
+        "wholesalePrice": 18,
+        "unitsPerCarton": 100
+      },
+      {
+        "specification": "Apoio lombar",
+        "wholesalePrice": 19,
         "unitsPerCarton": 100
       }
     ],
@@ -327,7 +367,7 @@ window.NEW_PRODUCTS = [
     "variants": [
       {
         "specification": "Padrão",
-        "wholesalePrice": 7,
+        "wholesalePrice": 5.5,
         "unitsPerCarton": 500
       }
     ],
@@ -343,7 +383,7 @@ window.NEW_PRODUCTS = [
     "variants": [
       {
         "specification": "Comprimento de 100 mm; kit de 11 peças com furo",
-        "wholesalePrice": 12,
+        "wholesalePrice": 10.5,
         "unitsPerCarton": 180
       }
     ],
@@ -359,7 +399,7 @@ window.NEW_PRODUCTS = [
     "variants": [
       {
         "specification": "Padrão",
-        "wholesalePrice": 4,
+        "wholesalePrice": 2.5,
         "unitsPerCarton": 300
       }
     ],
@@ -375,7 +415,7 @@ window.NEW_PRODUCTS = [
     "variants": [
       {
         "specification": "100 g",
-        "wholesalePrice": 6,
+        "wholesalePrice": 5,
         "unitsPerCarton": 192
       }
     ],
@@ -390,13 +430,13 @@ window.NEW_PRODUCTS = [
     "code": "BH1334",
     "variants": [
       {
-        "specification": "Modelo longo",
-        "wholesalePrice": 11,
+        "specification": "Longo",
+        "wholesalePrice": 8,
         "unitsPerCarton": 200
       },
       {
-        "specification": "Modelo curto",
-        "wholesalePrice": 6,
+        "specification": "Curto",
+        "wholesalePrice": 4,
         "unitsPerCarton": 400
       }
     ],
@@ -413,7 +453,7 @@ window.NEW_PRODUCTS = [
     "variants": [
       {
         "specification": "Azul",
-        "wholesalePrice": 2,
+        "wholesalePrice": 1.5,
         "unitsPerCarton": 3000
       }
     ],
@@ -428,9 +468,19 @@ window.NEW_PRODUCTS = [
     "code": "BH1336",
     "variants": [
       {
-        "specification": "Padrão",
-        "wholesalePrice": 11,
+        "specification": "Kit com 3 peças",
+        "wholesalePrice": 10,
         "unitsPerCarton": 100
+      },
+      {
+        "specification": "Kit com 6 peças",
+        "wholesalePrice": 17,
+        "unitsPerCarton": 50
+      },
+      {
+        "specification": "Kit com 7 peças",
+        "wholesalePrice": 23,
+        "unitsPerCarton": 50
       }
     ],
     "images": [
@@ -445,7 +495,7 @@ window.NEW_PRODUCTS = [
     "variants": [
       {
         "specification": "Kit com 6 peças",
-        "wholesalePrice": 9,
+        "wholesalePrice": 7,
         "unitsPerCarton": 100
       }
     ],
@@ -460,9 +510,14 @@ window.NEW_PRODUCTS = [
     "code": "BH1338",
     "variants": [
       {
-        "specification": "Padrão",
-        "wholesalePrice": 6,
+        "specification": "30 mm, 4 un.",
+        "wholesalePrice": 5,
         "unitsPerCarton": 180
+      },
+      {
+        "specification": "40 mm, 4 un.",
+        "wholesalePrice": 8.5,
+        "unitsPerCarton": 120
       }
     ],
     "images": [
@@ -476,9 +531,19 @@ window.NEW_PRODUCTS = [
     "code": "BH1339",
     "variants": [
       {
-        "specification": "Kit com 135 peças",
-        "wholesalePrice": 9,
+        "specification": "135PCS",
+        "wholesalePrice": 8,
         "unitsPerCarton": 200
+      },
+      {
+        "specification": "600PCS",
+        "wholesalePrice": 16,
+        "unitsPerCarton": 50
+      },
+      {
+        "specification": "1000PCS",
+        "wholesalePrice": 26,
+        "unitsPerCarton": 50
       }
     ],
     "images": [
@@ -492,7 +557,12 @@ window.NEW_PRODUCTS = [
     "code": "BH1341",
     "variants": [
       {
-        "specification": "Preto ou prata",
+        "specification": "Prata",
+        "wholesalePrice": 28,
+        "unitsPerCarton": 80
+      },
+      {
+        "specification": "Preto fosco",
         "wholesalePrice": 30,
         "unitsPerCarton": 80
       }
@@ -509,7 +579,7 @@ window.NEW_PRODUCTS = [
     "variants": [
       {
         "specification": "6–50 mm; kit com 15 peças",
-        "wholesalePrice": 23,
+        "wholesalePrice": 19,
         "unitsPerCarton": 100
       }
     ],
@@ -525,7 +595,7 @@ window.NEW_PRODUCTS = [
     "variants": [
       {
         "specification": "Padrão",
-        "wholesalePrice": 22,
+        "wholesalePrice": 19,
         "unitsPerCarton": 30
       }
     ],
@@ -541,7 +611,7 @@ window.NEW_PRODUCTS = [
     "variants": [
       {
         "specification": "Padrão",
-        "wholesalePrice": 3,
+        "wholesalePrice": 2,
         "unitsPerCarton": 500
       }
     ],
@@ -557,7 +627,7 @@ window.NEW_PRODUCTS = [
     "variants": [
       {
         "specification": "Padrão",
-        "wholesalePrice": 11,
+        "wholesalePrice": 10,
         "unitsPerCarton": 120
       }
     ],
@@ -573,7 +643,7 @@ window.NEW_PRODUCTS = [
     "variants": [
       {
         "specification": "Kit com 2 peças",
-        "wholesalePrice": 23,
+        "wholesalePrice": 20,
         "unitsPerCarton": 75
       }
     ],
@@ -589,7 +659,7 @@ window.NEW_PRODUCTS = [
     "variants": [
       {
         "specification": "Amarelo",
-        "wholesalePrice": 6,
+        "wholesalePrice": 4.5,
         "unitsPerCarton": 350
       }
     ],
@@ -605,7 +675,7 @@ window.NEW_PRODUCTS = [
     "variants": [
       {
         "specification": "Padrão",
-        "wholesalePrice": 27,
+        "wholesalePrice": 21.5,
         "unitsPerCarton": 33
       }
     ],
@@ -621,7 +691,7 @@ window.NEW_PRODUCTS = [
     "variants": [
       {
         "specification": "Padrão",
-        "wholesalePrice": 5,
+        "wholesalePrice": 3,
         "unitsPerCarton": 400
       }
     ],
@@ -636,9 +706,19 @@ window.NEW_PRODUCTS = [
     "code": "BH1275",
     "variants": [
       {
-        "specification": "Protetor antiderrapante redondo",
-        "wholesalePrice": 0.5,
+        "specification": "Anel antiderrapante",
+        "wholesalePrice": 0.3,
         "unitsPerCarton": 16000
+      },
+      {
+        "specification": "Gancho grande",
+        "wholesalePrice": 0.5,
+        "unitsPerCarton": 12000
+      },
+      {
+        "specification": "Gancho médio",
+        "wholesalePrice": 0.5,
+        "unitsPerCarton": 14000
       }
     ],
     "images": [
@@ -653,7 +733,7 @@ window.NEW_PRODUCTS = [
     "variants": [
       {
         "specification": "Rosa ou branco",
-        "wholesalePrice": 8,
+        "wholesalePrice": 6.5,
         "unitsPerCarton": 200
       }
     ],
@@ -669,7 +749,7 @@ window.NEW_PRODUCTS = [
     "variants": [
       {
         "specification": "Padrão",
-        "wholesalePrice": 4,
+        "wholesalePrice": 2.5,
         "unitsPerCarton": 600
       }
     ],
@@ -685,7 +765,7 @@ window.NEW_PRODUCTS = [
     "variants": [
       {
         "specification": "Padrão",
-        "wholesalePrice": 3,
+        "wholesalePrice": 1.5,
         "unitsPerCarton": 1000
       }
     ],
@@ -701,7 +781,7 @@ window.NEW_PRODUCTS = [
     "variants": [
       {
         "specification": "Padrão",
-        "wholesalePrice": 1.5,
+        "wholesalePrice": 1,
         "unitsPerCarton": 4200
       }
     ],
@@ -717,7 +797,7 @@ window.NEW_PRODUCTS = [
     "variants": [
       {
         "specification": "Padrão",
-        "wholesalePrice": 3,
+        "wholesalePrice": 2,
         "unitsPerCarton": 400
       }
     ],
@@ -733,7 +813,7 @@ window.NEW_PRODUCTS = [
     "variants": [
       {
         "specification": "Padrão",
-        "wholesalePrice": 15.5,
+        "wholesalePrice": 14.5,
         "unitsPerCarton": 50
       }
     ],
@@ -749,7 +829,7 @@ window.NEW_PRODUCTS = [
     "variants": [
       {
         "specification": "Padrão",
-        "wholesalePrice": 1.5,
+        "wholesalePrice": 1,
         "unitsPerCarton": 1250
       }
     ],
@@ -765,7 +845,7 @@ window.NEW_PRODUCTS = [
     "variants": [
       {
         "specification": "Padrão",
-        "wholesalePrice": 4,
+        "wholesalePrice": 2.5,
         "unitsPerCarton": 500
       }
     ],
@@ -780,7 +860,12 @@ window.NEW_PRODUCTS = [
     "code": "BH1342",
     "variants": [
       {
-        "specification": "Padrão",
+        "specification": "50ml5p",
+        "wholesalePrice": 4,
+        "unitsPerCarton": 400
+      },
+      {
+        "specification": "100ml5p",
         "wholesalePrice": 4.5,
         "unitsPerCarton": 400
       }
@@ -797,7 +882,7 @@ window.NEW_PRODUCTS = [
     "variants": [
       {
         "specification": "Padrão",
-        "wholesalePrice": 18,
+        "wholesalePrice": 16,
         "unitsPerCarton": 60
       }
     ],
@@ -812,8 +897,13 @@ window.NEW_PRODUCTS = [
     "code": "BH1359",
     "variants": [
       {
-        "specification": "30 ml",
-        "wholesalePrice": 3,
+        "specification": "30ml",
+        "wholesalePrice": 2,
+        "unitsPerCarton": 500
+      },
+      {
+        "specification": "60ml",
+        "wholesalePrice": 2.5,
         "unitsPerCarton": 500
       }
     ],
@@ -829,7 +919,7 @@ window.NEW_PRODUCTS = [
     "variants": [
       {
         "specification": "Padrão",
-        "wholesalePrice": 4,
+        "wholesalePrice": 2,
         "unitsPerCarton": 500
       }
     ],
@@ -844,8 +934,13 @@ window.NEW_PRODUCTS = [
     "code": "BH1299",
     "variants": [
       {
-        "specification": "Padrão",
-        "wholesalePrice": 14,
+        "specification": "Haste curta",
+        "wholesalePrice": 12,
+        "unitsPerCarton": 100
+      },
+      {
+        "specification": "Haste longa",
+        "wholesalePrice": 13,
         "unitsPerCarton": 100
       }
     ],
@@ -861,7 +956,7 @@ window.NEW_PRODUCTS = [
     "variants": [
       {
         "specification": "Padrão",
-        "wholesalePrice": 7,
+        "wholesalePrice": 6,
         "unitsPerCarton": 200
       }
     ],
@@ -877,7 +972,7 @@ window.NEW_PRODUCTS = [
     "variants": [
       {
         "specification": "Bege, vermelho, marrom ou preto",
-        "wholesalePrice": 11,
+        "wholesalePrice": 9,
         "unitsPerCarton": 100
       }
     ],
@@ -893,7 +988,7 @@ window.NEW_PRODUCTS = [
     "variants": [
       {
         "specification": "Padrão",
-        "wholesalePrice": 7,
+        "wholesalePrice": 5,
         "unitsPerCarton": 200
       }
     ],
@@ -909,7 +1004,7 @@ window.NEW_PRODUCTS = [
     "variants": [
       {
         "specification": "8 furos",
-        "wholesalePrice": 26,
+        "wholesalePrice": 25,
         "unitsPerCarton": 32
       }
     ],
@@ -925,7 +1020,7 @@ window.NEW_PRODUCTS = [
     "variants": [
       {
         "specification": "Padrão",
-        "wholesalePrice": 2,
+        "wholesalePrice": 1.5,
         "unitsPerCarton": 1000
       }
     ],
@@ -941,7 +1036,7 @@ window.NEW_PRODUCTS = [
     "variants": [
       {
         "specification": "Padrão",
-        "wholesalePrice": 11,
+        "wholesalePrice": 8.5,
         "unitsPerCarton": 125
       }
     ],
@@ -957,7 +1052,7 @@ window.NEW_PRODUCTS = [
     "variants": [
       {
         "specification": "Padrão",
-        "wholesalePrice": 7.5,
+        "wholesalePrice": 6,
         "unitsPerCarton": 600
       }
     ],
@@ -973,7 +1068,7 @@ window.NEW_PRODUCTS = [
     "variants": [
       {
         "specification": "Padrão",
-        "wholesalePrice": 16,
+        "wholesalePrice": 13,
         "unitsPerCarton": 60
       }
     ],
@@ -989,7 +1084,7 @@ window.NEW_PRODUCTS = [
     "variants": [
       {
         "specification": "Padrão",
-        "wholesalePrice": 42,
+        "wholesalePrice": 37,
         "unitsPerCarton": 20
       }
     ],
@@ -1004,9 +1099,14 @@ window.NEW_PRODUCTS = [
     "code": "BH1311",
     "variants": [
       {
-        "specification": "Padrão",
-        "wholesalePrice": 3.5,
+        "specification": "Dispenser azul com sacos",
+        "wholesalePrice": 2.5,
         "unitsPerCarton": 650
+      },
+      {
+        "specification": "Refil, 10 rolos",
+        "wholesalePrice": 6.5,
+        "unitsPerCarton": 120
       }
     ],
     "images": [
