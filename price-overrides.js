@@ -19,9 +19,9 @@ window.PRICE_OVERRIDES = {
       "code": "BH1035",
       "slot": 1,
       "x": 368,
-      "y": 519,
-      "width": 330,
-      "height": 80,
+      "y": 544,
+      "width": 280,
+      "height": 55,
       "lines": [
         "Fosco: R$ 1,2",
         "Cromado: R$ 1,5"
