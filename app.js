@@ -38,11 +38,11 @@
   const money = value => value == null ? "Sob consulta" : new Intl.NumberFormat("pt-BR", { maximumFractionDigits: 2 }).format(value);
   const card = (product, slot) => {
     const variant = product.variants[0] || {};
+    const cartons = [...new Set(product.variants.map(item => item.unitsPerCarton))];
     const model = product.variants.length > 1
-      ? product.variants.map(item => `<p class="variant-price"><span>${item.specification}</span><strong>R$ ${money(item.wholesalePrice)}</strong></p>`).join("")
+      ? product.variants.map(item => `<p class="variant-price"><span>${item.specification}${cartons.length > 1 && item.unitsPerCarton != null ? `<small class="variant-carton">Embalagem: ${item.unitsPerCarton.toLocaleString("pt-BR")}/cx</small>` : ""}</span><strong>R$ ${money(item.wholesalePrice)}</strong></p>`).join("")
       : (variant.specification && variant.specification !== "Padrão" ? `<p>Modelo: ${variant.specification}</p>` : "");
     const position = slot == null ? "" : ` style="grid-column:${slot % 5 + 1};grid-row:${Math.floor(slot / 5) + 1}"`;
-    const cartons = [...new Set(product.variants.map(item => item.unitsPerCarton))];
     const packaging = cartons.length === 1 && cartons[0] != null ? `<p>Embalagem: ${cartons[0].toLocaleString("pt-BR")}/cx</p>` : "";
     const price = product.variants.length > 1 ? "" : `<p>Valor: ${money(variant.wholesalePrice)}</p>`;
     return `<article class="catalog-product-card" data-code="${product.code}"${position}><div class="catalog-product-image"><img src="${product.images?.[0] || ""}" alt="${product.name}"></div><div class="catalog-product-copy"><div class="product-title-line"><h2>${product.code} ${product.name}</h2><span class="new-pill">NOVO</span></div>${packaging}${model}${price}</div></article>`;

@@ -304,7 +304,8 @@ body { overflow: hidden; }
   text-align: right;
 }
 .original-price-override.multiple-prices p { white-space: normal; }
-.original-price-override.multiple-prices span { white-space: nowrap; }
+.original-price-override.multiple-prices span { white-space: normal; overflow-wrap: anywhere; }
+.variant-carton { display: block; font: inherit; color: #554f4a; }
 .catalog-sheet[data-original-page="17"] .overlay-grid {
   inset: 11.111111% 3.392857% auto 1.607143%;
 }

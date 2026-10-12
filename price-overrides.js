@@ -502,7 +502,7 @@ window.PRICE_OVERRIDES = {
       "slot": 8,
       "x": 1037,
       "y": 965,
-      "width": 330,
+      "width": 289,
       "height": 130,
       "lines": [
         "150 × 100, 80/cx: R$ 20",
@@ -538,7 +538,7 @@ window.PRICE_OVERRIDES = {
       "slot": 1,
       "x": 371,
       "y": 485,
-      "width": 330,
+      "width": 291,
       "height": 114,
       "lines": [
         "Kit com 9 peças, 200/cx: R$ 3",
@@ -555,7 +555,7 @@ window.PRICE_OVERRIDES = {
       "slot": 3,
       "x": 1034,
       "y": 485,
-      "width": 330,
+      "width": 292,
       "height": 114,
       "lines": [
         "40 × 60, 70/cx: R$ 10",
@@ -654,7 +654,7 @@ window.PRICE_OVERRIDES = {
       "slot": 7,
       "x": 702,
       "y": 965,
-      "width": 330,
+      "width": 292,
       "height": 130,
       "lines": [
         "1M, 630/cx: R$ 2,5",
@@ -690,7 +690,7 @@ window.PRICE_OVERRIDES = {
       "slot": 0,
       "x": 41,
       "y": 485,
-      "width": 330,
+      "width": 289,
       "height": 114,
       "lines": [
         "1 clipe + 2 ganchos, 200/cx: R$ 7",
@@ -773,7 +773,7 @@ window.PRICE_OVERRIDES = {
       "slot": 5,
       "x": 43,
       "y": 965,
-      "width": 330,
+      "width": 287,
       "height": 130,
       "lines": [
         "0.5cm × 50m, 540/cx: R$ 2,5",
@@ -807,7 +807,7 @@ window.PRICE_OVERRIDES = {
       "slot": 7,
       "x": 701,
       "y": 965,
-      "width": 330,
+      "width": 293,
       "height": 130,
       "lines": [
         "4 × 6cm(20pcs), 1500/cx: R$ 1,5",
@@ -903,7 +903,7 @@ window.PRICE_OVERRIDES = {
       "slot": 3,
       "x": 1035,
       "y": 485,
-      "width": 330,
+      "width": 291,
       "height": 114,
       "lines": [
         "Pequeno, 100/cx: R$ 16",
@@ -950,7 +950,7 @@ window.PRICE_OVERRIDES = {
       "slot": 6,
       "x": 373,
       "y": 965,
-      "width": 330,
+      "width": 289,
       "height": 130,
       "lines": [
         "Protetor auricular, 1500/cx: R$ 2",
@@ -1029,7 +1029,7 @@ window.PRICE_OVERRIDES = {
       "slot": 1,
       "x": 371,
       "y": 485,
-      "width": 330,
+      "width": 291,
       "height": 114,
       "lines": [
         "Kit com 27 peças, 240/cx: R$ 7",
@@ -1063,7 +1063,7 @@ window.PRICE_OVERRIDES = {
       "slot": 3,
       "x": 1035,
       "y": 485,
-      "width": 330,
+      "width": 291,
       "height": 114,
       "lines": [
         "50 m, 48/cx: R$ 16",
@@ -1324,7 +1324,7 @@ window.PRICE_OVERRIDES = {
       "slot": 8,
       "x": 1036,
       "y": 965,
-      "width": 330,
+      "width": 290,
       "height": 130,
       "lines": [
         "2.5 × 9.14, 360/cx: R$ 4",
@@ -1453,7 +1453,7 @@ window.PRICE_OVERRIDES = {
       "slot": 3,
       "x": 1034,
       "y": 517,
-      "width": 330,
+      "width": 292,
       "height": 82,
       "lines": [
         "XY088: R$ 8",
@@ -1517,7 +1517,7 @@ window.PRICE_OVERRIDES = {
       "slot": 7,
       "x": 701,
       "y": 996,
-      "width": 330,
+      "width": 293,
       "height": 99,
       "lines": [
         "Guidão: R$ 8",
@@ -1644,7 +1644,7 @@ window.PRICE_OVERRIDES = {
       "slot": 6,
       "x": 372,
       "y": 996,
-      "width": 330,
+      "width": 290,
       "height": 99,
       "lines": [
         "Sem contador: R$ 5,5",
@@ -1710,7 +1710,7 @@ window.PRICE_OVERRIDES = {
       "slot": 0,
       "x": 41,
       "y": 485,
-      "width": 330,
+      "width": 289,
       "height": 114,
       "lines": [
         "30 × 45, 100/cx: R$ 12",
@@ -1731,7 +1731,7 @@ window.PRICE_OVERRIDES = {
       "slot": 1,
       "x": 372,
       "y": 485,
-      "width": 330,
+      "width": 290,
       "height": 114,
       "lines": [
         "1.1M, 252/cx: R$ 35",
@@ -1765,7 +1765,7 @@ window.PRICE_OVERRIDES = {
       "slot": 3,
       "x": 1035,
       "y": 485,
-      "width": 330,
+      "width": 291,
       "height": 114,
       "lines": [
         "3M (BH1144), 144/cx: R$ 8",
